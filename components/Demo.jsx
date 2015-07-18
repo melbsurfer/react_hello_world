@@ -9,46 +9,28 @@ var Demo = React.createClass({
 					
 					<p className="h3">How did you hear about us?</p>
 
-					<p className="radio">
-						<label>
-							<input type="radio" name="referrer" value="newspaper"/>
-							Newspaper
-						</label>
-					</p>
-					<p className="radio">
-						<label>
-							<input type="radio" name="referrer" value="radio"/>
-							Radio
-						</label>
-					</p>
-					<p className="radio">
-						<label>
-							<input type="radio" name="referrer" value="tv"/>
-							Television
-						</label>
-					</p>
-					<p className="radio">
-						<label>
-							<input type="radio" name="referrer" value="search"/>
-							Search Engine
-						</label>
-					</p>
-					<p className="radio">
-						<label>
-							<input type="radio" name="referrer" value="social"/>
-							Social Media
-						</label>
-					</p>
-					<p className="radio">
-						<label>
-							<input type="radio" name="referrer" value="other"/>
-							Other
-						</label>
-						<label className="form-inline">
-							Please specify:
-							<input type="text" name="referrer_other"/>
-						</label>
-					</p>
+					<RadioOption value="newspaper">
+						Newspaper
+					</RadioOption>
+
+					<RadioOption value="radio">
+						Radio
+					</RadioOption>
+
+					<RadioOption value="tv">
+						Television
+					</RadioOption>
+
+					<RadioOption value="search">
+						Search Engine
+					</RadioOption>
+
+					<RadioOption value="social">
+						Social Media
+					</RadioOption>
+
+					<RadioOtherOption/>
+					
 
 					<p><input type="submit"/></p>
 				</form>
